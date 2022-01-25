@@ -85,6 +85,13 @@
       border: 40px;
       background-color: #eee;
     }
+    .center {
+      margin: 15px 45px 0px 45px;
+    }
+    .input {
+      width: 375px;
+      height: 40px;
+    }
   
       /* Menu */
     .bg-dark {

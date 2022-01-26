@@ -52,6 +52,9 @@
       margin-top: -60px;
       position: absolute;
       bottom: 0;
+      justify-content: space-between;
+      padding: 0 30px 0 30px;
+      align-items: center !important;
     }
     
     .feature {
@@ -81,10 +84,26 @@
       padding: 10px;
       padding-top: 150px;
     }
-  
-    img {
-      width: 100%;
-      margin: 10px;
+
+    .mainpage {
+      background-color: var(--overlay);
+      width: 80em;
+      min-height: 100vh;
+      margin: auto;
+      margin-top: -135px;
+      padding: 10px;
+      padding-top: 300px;
+      overflow: hidden;
+    }
+    .forum {
+      background-color: var(--overlay);
+      width: 80em;
+      min-height: 100vh;
+      margin: auto;
+      margin-top: -135px;
+      padding: 10px;
+      padding-top: 250px;
+      overflow: hidden;
     }
   
     .svg {
@@ -94,7 +113,7 @@
     .comment {
       margin: 10px;
       overflow: hidden;
-      color: white;
+      color: var(--font);
     }
     .comment2{
       margin: 10px;
@@ -148,6 +167,11 @@
       .contentbox {
         width: 90%;
       }
+      .jumbotron,
+      .jumbotron-fluid,
+      .mainpage {
+        width: 90%;
+      }
     }
     
     /* Tablet Styles */
@@ -157,7 +181,8 @@
       .feature-3 {
         width: 50%;
     }
-    .contentbox {
+    .contentbox,
+    .mainpage {
       width: 90%;
     }
   }

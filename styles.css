@@ -6,25 +6,34 @@
   }
   
   :root {
-    --background: white;
+    --background: #121212;
     --overlay: #DDE6D5;
-    --headfooter: #c9b2ba;
+    --headfooter: #436d4a73;
     --font: black;
     --hover: #9B828A;
-    --button: #618a76;
+    --button: #af8eb5;
   }
 
   body {
     min-height: 100vh;
     margin: 0;
     position: relative;
-    background: var(--background);
-  }
+   }
   
   body::after {
     content: '';
     display: block;
     height: 60px;
+  }
+
+
+  .home-image {
+    background: url(/Images/EwwWhylarge.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
   }
   
   .page {
@@ -62,7 +71,8 @@
     }
   
     .feature-1 {
-      background-color: #A1B08D;
+      margin: auto;
+      margin-top: 0 !important;
     }
     
     .feature-2 {
@@ -90,7 +100,7 @@
       width: 80em;
       min-height: 100vh;
       margin: auto;
-      margin-top: -135px;
+      margin-top: -116px;
       padding: 10px;
       padding-top: 300px;
       overflow: hidden;
@@ -100,20 +110,21 @@
       width: 80em;
       min-height: 100vh;
       margin: auto;
-      margin-top: -135px;
+      margin-top: -116px;
       padding: 10px;
-      padding-top: 250px;
+      padding-top: 200px;
       overflow: hidden;
     }
   
     .svg {
-      width: 30%;
+      width: 120%;
     }
   
     .comment {
       margin: 10px;
       overflow: hidden;
       color: var(--font);
+      margin-top: 40px;
     }
     .comment2{
       margin: 10px;
@@ -135,7 +146,20 @@
       margin-left: auto;
       margin-right: auto;
     }
-  
+    /*forum images*/
+    .card-deck {
+      justify-content: space-center;
+    }
+    .card {
+      height:fit-content;
+      min-width: 15rem;
+      max-width: 18rem;
+      flex: 0 1 calc(25% - 1em);
+    }
+    .card-footer {
+      justify-content: space-between;
+    }
+
       /* Menu */
     .bg-dark {
       background-color: var(--headfooter) !important;
@@ -146,7 +170,7 @@
     }
     /*text color*/
     .navbar-dark .navbar-nav .nav-link {
-      color: var(--font)  !important;
+      color: white;
     }
     /*button*/
     .btn :hover {
@@ -159,7 +183,7 @@
     }
 
     /* Mobile Styles */
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 400px) {
       .feature-1,
       .feature-2,
       .feature-3,
@@ -172,19 +196,31 @@
       .mainpage {
         width: 90%;
       }
+      .forum {
+        width: 90%;
+        align-items: center;
+      }
+      .home-image {
+        
+      }
     }
     
     /* Tablet Styles */
-    @media only screen and (min-width: 501px) and (max-width: 960px) {
+    @media only screen and (min-width: 401px) and (max-width: 960px) {
       .feature-1,
       .feature-2,
       .feature-3 {
         width: 50%;
     }
     .contentbox,
-    .mainpage {
+    .mainpage,
+    .input {
       width: 90%;
     }
+    .forum {
+      width: 90%;
+    }
+  
   }
     
     /* Desktop Styles */
@@ -199,8 +235,12 @@
         width: 22%;
       }
       .footer {
-          height: 70px;
+          height: 60px;
           order: 2;
+      }
+      .mainpage,
+      .forum {
+        width: 90%;
       }
     }
   

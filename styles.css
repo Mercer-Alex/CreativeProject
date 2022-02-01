@@ -82,8 +82,15 @@
       width: 100%;
       align-items: center;
     }
-    
-    .opiniontitle {
+    .opinion {
+      background-color: var(--overlay);
+      width: 40em;
+      margin: auto;
+      padding: 10px;
+      overflow: hidden;
+      color: white;
+    }
+    .opinion-title {
       background-color: #7f60854f;
       color: var(--font);
       padding-left: 20px;
@@ -93,7 +100,7 @@
     /*login page*/
     .contentbox {
       background-color: var(--overlay);
-      min-height: 86vh;
+      min-height: 90vh;
       margin: auto;
       width: 60em;
       color: var(--font);
@@ -120,7 +127,7 @@
     .forum {
       background-color: var(--overlay);
       width: 40em;
-      min-height: 86vh;
+      min-height: 90vh;
       margin: auto;
       padding: 10px;
       overflow: hidden;
@@ -162,10 +169,7 @@
       margin-right: auto;
     }
     /*forum images*/
-    .card-deck {
-      justify-items: center;
-    }
-
+ 
     .card {
       height:fit-content;
       min-width: 18rem;
@@ -204,12 +208,13 @@
     }
     
     /* Mobile Styles */
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 500px) {
       .feature-1,
       .feature-2,
       .feature-3,
       .input,
-      .mainpage {
+      .mainpage,
+      .opinion {
         width: 90%;
       }
       .forum {
@@ -219,20 +224,24 @@
       }
       .contentbox {
         width: 90%;
+        min-height: 87vh;
       }
     }
     
     /* Tablet Styles */
-    @media only screen and (min-width: 401px) and (max-width: 960px) {
+    @media only screen and (min-width: 501px) and (max-width: 960px) {
       .feature-1,
       .feature-2,
       .feature-3 {
         width: 50%;
     }
-    .contentbox,
     .mainpage,
-    .input {
+    .opinion {
       width: 90%;
+    }
+    .contentbox {
+      width: 90%;
+      min-height: 92vh; 
     }
     .forum {
       width: 90%;
@@ -256,7 +265,8 @@
           order: 2;
       }
       .mainpage,
-      .forum {
+      .forum,
+      .opinion {
         width: 90%;
       }
     }

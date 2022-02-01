@@ -11,7 +11,7 @@
     --headfooter: #436d4a31;
     --font: rgb(255, 255, 255);
     --hover: #af8eb5;
-    --button: #af8eb5;
+    --button: #7f6085;
     --cards: #9fcda56b;
   }
 
@@ -192,7 +192,7 @@
     }
     /*text color*/
     .navbar-dark .navbar-nav .nav-link {
-      color: white;
+      color: var(--font);
     }
     /*button*/
     .btn :hover {
@@ -202,6 +202,12 @@
       color: #ffffff !important;
       background-color: var(--button);
       border-color: black;
+    }
+    .dropdown-menu {
+      background-color: #7f6085;
+    }
+    .dropdown-item {
+      color: var(--font);
     }
     .png {
       width: 7%;

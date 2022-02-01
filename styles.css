@@ -45,9 +45,9 @@
       width: 100%;
       height: 300px;
       display: flex;
-      justify-content: center;
       align-items: center;
     }
+
     .content {
       background-color: var(--background);
     }
@@ -61,8 +61,12 @@
       margin-top: -50px;
       position: absolute;
       bottom: 0;
-      justify-content: space-between;
-      padding: 0 30px 0 30px;
+      padding: 0 30px;
+    }
+    .icon {
+      padding-left: 25px;
+      word-spacing: 25px;
+      float: left;
     }
     
     .feature {
@@ -76,11 +80,14 @@
     
     .feature-2 {
       width: 100%;
-      align-items: center;;
+      align-items: center;
     }
     
-    .feature-3 {
-      background-color: #EDFCD7;
+    .opiniontitle {
+      background-color: #7f60854f;
+      color: var(--font);
+      padding-left: 20px;
+      border-radius: calc(0.45rem - 1px);
     }
 
     /*login page*/
@@ -89,7 +96,7 @@
       min-height: 86vh;
       margin: auto;
       width: 60em;
-      color: white;
+      color: var(--font);
       display: flex;
       text-align: center;
       align-items: center;
@@ -112,7 +119,7 @@
     /*opinion page*/
     .forum {
       background-color: var(--overlay);
-      width: 80em;
+      width: 40em;
       min-height: 86vh;
       margin: auto;
       padding: 10px;
@@ -130,10 +137,12 @@
       color: var(--font);
       margin-top: 40px;
     }
+
     .comment2{
       margin: 10px;
       overflow: hidden;
     }
+    
     .avatar {
       float: left;
       width: 40%;
@@ -141,9 +150,11 @@
       border: 40px;
       background-color: #eee;
     }
+
     .center {
       margin: 15px 45px 0px 45px;
     }
+    
     .input {
       width: 375px;
       height: 40px;
@@ -152,11 +163,12 @@
     }
     /*forum images*/
     .card-deck {
-      justify-content: space-center;
+      justify-items: center;
     }
+
     .card {
       height:fit-content;
-      min-width: 15rem;
+      min-width: 18rem;
       max-width: 18rem;
       flex: 0 1 calc(25% - 1em);
       background-color: var(--cards);
@@ -185,9 +197,12 @@
     .btn {
       color: #ffffff !important;
       background-color: var(--button);
-      border-color: black;      
+      border-color: black;
     }
-
+    .png {
+      width: 7%;
+    }
+    
     /* Mobile Styles */
     @media only screen and (max-width: 400px) {
       .feature-1,
@@ -200,6 +215,7 @@
       .forum {
         width: 90%;
         align-items: center;
+        justify-content: center;
       }
       .contentbox {
         width: 90%;

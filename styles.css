@@ -116,11 +116,16 @@
     .mainpage {
       background-color: var(--overlay);
       width: 80em;
-      min-height: 100vh;
+      min-height: 90vh;
       margin: auto;
-      margin-top: -116px;
       padding: 10px;
-      padding-top: 300px;
+      overflow: hidden;
+    }
+
+    .aboutmain {
+      background-color: var(--overlay);
+      width: 70em;
+      margin: auto;
       overflow: hidden;
     }
     /*opinion page*/
@@ -178,6 +183,7 @@
       background-color: var(--cards);
       color: white;
     }
+
     .card-footer {
       justify-content: space-between;
     }
@@ -198,26 +204,54 @@
     .btn :hover {
       color: var(--hover)  !important;
     }
+
     .btn {
       color: #ffffff !important;
       background-color: var(--button);
       border-color: black;
     }
+
     .dropdown-menu {
       background-color: #7f6085;
     }
+
     .dropdown-item {
       color: var(--font);
     }
+    /*for the linkedin*/
     .png {
       width: 7%;
     }
+    /* Split the screen in half */
+
+
+/* Control the left side */
+    .left {
+      float: left;
+      width: 40%;
+      min-height: 90vh;
+      color: var(--font);
+      background-color: var(--background);
+    }
+
+/* Control the right side */
+    .right {
+      float:right;
+      width: 60%;
+      min-height: 90vh;
+      background: url(/Images/EwWhyUpright.png);
+      background-position: center;
+    }
+
+/* If you want the content centered horizontally and vertically */
+    .centered {
+      margin: 450px 45px 0px 45px;
+   }
     
     /* Mobile Styles */
     @media only screen and (max-width: 500px) {
       .feature-1,
       .feature-2,
-      .feature-3,
       .input,
       .mainpage,
       .opinion {
@@ -232,17 +266,33 @@
         width: 90%;
         min-height: 87vh;
       }
+      .aboutmain {
+        width: 90%;
+      }
+      .left {
+        width: 50%;
+      }
+      .right {
+        width: 50%;
+        background-size:cover;
+        background-repeat: no-repeat;
+      }
+      .centered {
+        margin: auto;
+        margin-top: 25px;
+      }
     }
     
     /* Tablet Styles */
     @media only screen and (min-width: 501px) and (max-width: 960px) {
       .feature-1,
-      .feature-2,
-      .feature-3 {
+      .feature-2
+       {
         width: 50%;
     }
     .mainpage,
-    .opinion {
+    .opinion,
+    .aboutmain {
       width: 90%;
     }
     .contentbox {
@@ -262,8 +312,7 @@
         margin: 0 auto;
       }
       .feature-1,
-      .feature-2,
-      .feature-3 {
+      .feature-2 {
         width: 22%;
       }
       .footer {

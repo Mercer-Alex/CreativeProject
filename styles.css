@@ -142,6 +142,9 @@
     .svg {
       width: 120%;
     }
+    .logo {
+      width: 150px;
+    }
   
     .comment {
       margin: 10px;

@@ -26,10 +26,6 @@
     display: block;
     height: 50px;
   }
-  
-  img {
-    width: 150px;
-  }
 
   .home-image {
     background: url(/Images/widest.jpg);

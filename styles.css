@@ -26,6 +26,9 @@
     display: block;
     height: 50px;
   }
+  img {
+    width: 150px;
+  }
 
   .home-image {
     background: url(/Images/widest.jpg);
@@ -143,7 +146,7 @@
       width: 120%;
     }
     .logo {
-      width: 150px !important;
+      width: 150px;
     }
   
     .comment {
@@ -223,7 +226,7 @@
     }
     /*for the linkedin*/
     .png {
-      width: 7%;
+      width: 5%;
     }
     /* Split the screen in half */
 

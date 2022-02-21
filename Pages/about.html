@@ -4,12 +4,9 @@
 <head>
     <meta charset='UTF-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Eww, Why</title>
     <link rel="icon" type="image/x-icon" href="/Images/favicon-32x32.png">
 </head>
@@ -17,64 +14,88 @@
 <body class="content">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="/index.html"> <img class="logo" src="/Images/EWLogo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/index.html">Home<span class="sr-only">(current)</span></a>
+            <ul class="social navbar-nav mr-auto">
+                <li class="nav-item nav-link active">
+                    <a href="/index.html"><i class="fa fa-fw fa-home"></i></a></li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/Pages/about.html">About</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="/Pages/forums.html" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Opinions</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/Forums/food.html">Food</a>
-                        <a class="dropdown-item" href="/Forums/colors.html">Colors</a>
-                        <a class="dropdown-item" href="/Forums/misc.html">Misc</a>
-                    </div>
-                </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <a href="/Pages/login.html" class="btn btn-sm btn-outline-dark my-2 mr-sm-0" role="button">Login</a>
+                <a href="/Pages/login.html" class="btn btn-sm btn-outline-dark my-2 mr-sm-0" role="button"><i class="fa fa-fw fa-user"></i></a>
             </form>
         </div>
     </nav>
 
-    <div class="aboutmain">
-        <div class="left">
-            <div class="centered">
-                <h1>What is this?</h1>
-                <p>Eww, Why is a safe space to go and post about the things you find gross, weird, or disturbing.</p>
-                <p>In time, a user will be able to create an account, and contribute to Eww, Why with their own posts.</p>
+    <div class="opinion">
+        <div class="post">
+            <div class="user">
+                <p> <img class="user-profile" src="/Images/gross plant.jpg" /> Veggie Bad</p>
+            </div>
+            <div class="post-image"><img src="/Images/butterlesstoast.jpg" alt="butterless toast"></div>
+            <div class="post-word">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="public-response">
+                <div>
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                    <div class="footer-box">
+                                        <ul class="social">
+                                            <li><a href="https://www.linkedin.com/in/mercer-alex"><i class="fa fa-linkedin"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/Mercer-Alex/CreativeProject"><i class="fa fa-github"></i></a></li>
+                                            <li><a href="mailto:a.mercer118@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4"></div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+
             </div>
         </div>
-        <div class="right"></div>
-    </div>
-
-    <div class="section footer">
-        <div class="icon">
-            <a href="https://github.com/Mercer-Alex/CreativeProject"> <img src="/Images/GitHub-Mark-Light-32px.png">
-            </a>
-            <a href="https://www.linkedin.com/in/mercer-alex"> <img class="png" src="/Images/LI-In-Bug.png"> </a>
-        </div>
-    </div>
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+
+
+    <div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="footer-box">
+                            <ul class="social">
+                                <li><a href="https://www.linkedin.com/in/mercer-alex"><i class="fa fa-linkedin"></i></a>
+                                </li>
+                                <li><a href="https://github.com/Mercer-Alex/CreativeProject"><i class="fa fa-github"></i></a></li>
+                                <li><a href="mailto:a.mercer118@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,11 +1,10 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  :root {
+}
+
+ :root {
     --background: #121212;
     --overlay: #e1bee709;
     --headfooter: #436d4a31;
@@ -13,319 +12,477 @@
     --hover: #af8eb5;
     --button: #7f6085;
     --cards: #9fcda56b;
-  }
+}
 
-  body {
+body {
     min-height: 100vh;
     margin: 0;
     position: relative;
-   }
-  
-  body::after {
+}
+
+body::after {
     content: '';
     display: block;
     height: 50px;
-  }
+}
 
-  .home-image {
+.home-image {
     background: url(/Images/widest.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+}
 
-  }
-  
-  .page {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    
-    .section {
-      width: 100%;
-      height: 300px;
-      display: flex;
-      align-items: center;
-    }
+footer.footer {
+    text-align: center;
+    color: #9da1a6;
+    position: relative;
+    background-color: #141414;
+    padding: 30px 0px 10px 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
-    .content {
-      background-color: var(--background);
-    }
-  
-    .footer {
-      clear: both;
-      background-color: var(--headfooter);
-      color: rgb(255, 255, 255);
-      width: 100%;
-      height: 50px;
-      margin-top: -50px;
-      position: absolute;
-      bottom: 0;
-      padding: 0 30px;
-    }
-    .icon {
-      padding-left: 25px;
-      word-spacing: 25px;
-      float: left;
-    }
-    
-    .feature {
-      margin: 10px;
-    }
-  
-    .feature-1 {
-      margin: auto;
-      margin-top: 0 !important;
-    }
-    
-    .feature-2 {
-      width: 100%;
-      align-items: center;
-    }
-    .opinion {
-      background-color: var(--overlay);
-      width: 40em;
-      margin: auto;
-      padding: 10px;
-      overflow: hidden;
-      color: white;
-    }
-    .opinion-title {
-      background-color: #7f60854f;
-      color: var(--font);
-      padding-left: 20px;
-      border-radius: calc(0.45rem - 1px);
-    }
+ul.social {
+    margin: 0;
+    padding: 0;
+}
 
-    /*login page*/
-    .contentbox {
-      background-color: var(--overlay);
-      min-height: 90vh;
-      margin: auto;
-      width: 60em;
-      color: var(--font);
-      display: flex;
-      text-align: center;
-      align-items: center;
-    }
+footer.footer ul.social {
+    margin: 0px 0px 10px 0px;
+}
 
-    .formbox {
-     margin: auto;
-    }
+footer.footer ul.social li {
+    display: inline-block;
+    margin: 0px 10px;
+}
 
-    .mainpage {
-      background-color: var(--overlay);
-      width: 80em;
-      min-height: 90vh;
-      margin: auto;
-      padding: 10px;
-      overflow: hidden;
-    }
+footer.footer ul.social li a {
+    color: #393939;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    border-color: #393939;
+    position: relative;
+    border: 2px solid #393939;
+    display: inline-block;
+    line-height: 40px;
+    margin-bottom: 10px;
+    font-size: x-large;
+    -webkit-transition: all .3s ease-in-out 0s;
+    -moz-transition: all .3s ease-in-out 0s;
+    -ms-transition: all .3s ease-in-out 0s;
+    -o-transition: all .3s ease-in-out 0s;
+    transition: all .3s ease-in-out 0s;
+}
 
-    .aboutmain {
-      background-color: var(--overlay);
-      width: 70em;
-      margin: auto;
-      overflow: hidden;
-    }
-    /*opinion page*/
-    .forum {
-      background-color: var(--overlay);
-      width: 40em;
-      min-height: 90vh;
-      margin: auto;
-      padding: 10px;
-      overflow: hidden;
-      color: white;
-    }
-  
-    .svg {
-      width: 120%;
-    }
-    .logo {
-      width: 150px;
-    }
-  
-    .comment {
-      margin: 10px;
-      overflow: hidden;
-      color: var(--font);
-      margin-top: 40px;
-    }
+footer.footer ul.social li a:hover {
+    color: var(--hover);
+    border-color: var(--hover);
+}
 
-    .comment2{
-      margin: 10px;
-      overflow: hidden;
-    }
-    
-    .avatar {
-      float: left;
-      width: 40%;
-      margin: 25px;
-      border: 40px;
-      background-color: #eee;
-    }
 
-    .center {
-      margin: 15px 45px 0px 45px;
-    }
-    
-    .input {
-      width: 375px;
-      height: 40px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    /*forum images*/
- 
-    .card {
-      height:fit-content;
-      min-width: 18rem;
-      max-width: 18rem;
-      flex: 0 1 calc(25% - 1em);
-      background-color: var(--cards);
-      color: white;
-    }
+/* the toggle, I just don't want to deal with it rn
+.toggle {
+    float: right;
+    padding-right: 20px;
+    ;
+}
 
-    .card-footer {
-      justify-content: space-between;
-    }
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
 
-      /* Menu */
-    .bg-dark {
-      background-color: var(--headfooter) !important;
-    }
-      /*hover color*/
-    .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
-      color: var(--hover)  !important;
-    }
-    /*text color*/
-    .navbar-dark .navbar-nav .nav-link {
-      color: var(--font);
-    }
-    /*button*/
-    .btn :hover {
-      color: var(--hover)  !important;
-    }
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
-    .btn {
-      color: #ffffff !important;
-      background-color: var(--button);
-      border-color: black;
-    }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
-    .dropdown-menu {
-      background-color: #7f6085;
-    }
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
 
-    .dropdown-item {
-      color: var(--font);
-    }
-    /*for the linkedin*/
-    .png {
-      width: 5%;
-    }
-    /* Split the screen in half */
+input:checked+.slider {
+    background-color: var(--button);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px var(--button);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+*/
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    background-color: var(--background);
+}
+
+.icon {
+    padding-left: 25px;
+    word-spacing: 25px;
+    float: left;
+}
+
+.feature {
+    margin: 10px;
+}
+
+.feature-1 {
+    margin: auto;
+    margin-top: 0 !important;
+}
+
+.feature-2 {
+    width: 100%;
+    align-items: center;
+}
+
+.opinion {
+    background-color: var(--overlay);
+    width: 40em;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.opinion-title {
+    background-color: #7f60854f;
+    color: var(--font);
+    padding-left: 20px;
+    border-radius: calc(0.45rem - 1px);
+}
+
+
+/*login page*/
+
+.contentbox {
+    background-color: var(--overlay);
+    min-height: 80vh;
+    margin: auto;
+    width: 60em;
+    color: var(--font);
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.formbox {
+    margin: auto;
+}
+
+.mainpage {
+    background-color: var(--overlay);
+    width: 80em;
+    min-height: 90vh;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.aboutmain {
+    background-image: url(/Images/loginback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*opinion page*/
+
+.forum {
+    background-color: var(--overlay);
+    width: 40em;
+    min-height: 90vh;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    color: white;
+}
+
+.svg {
+    width: 120%;
+}
+
+.logo {
+    width: 150px;
+}
+
+.comment {
+    margin: 10px;
+    overflow: hidden;
+    color: var(--font);
+    margin-top: 40px;
+}
+
+.comment2 {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.center {
+    margin: 15px 45px 0px 45px;
+}
+
+.input {
+    width: 375px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*forum images*/
+
+.card {
+    height: fit-content;
+    min-width: 18rem;
+    max-width: 18rem;
+    flex: 0 1 calc(25% - 1em);
+    background-color: var(--cards);
+    color: white;
+}
+
+.card-footer {
+    justify-content: space-between;
+}
+
+
+/* Menu */
+
+.bg-dark {
+    background-color: var(--headfooter) !important;
+}
+
+
+/*hover color*/
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--hover);
+}
+
+.nav-item a {
+    color: var(--button);
+    font-size: 2em;
+}
+
+
+/*text color*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--font);
+}
+
+
+/*button*/
+
+.btn :hover {
+    color: var(--hover) !important;
+}
+
+.btn {
+    background-color: var(--button);
+    border-color: black;
+}
+
+.dropdown-menu {
+    background-color: #7f6085;
+}
+
+.dropdown-item {
+    color: var(--font);
+}
+
+.png {
+    width: 5%;
+}
+
+.split {
+    display: flex;
+    height: 80%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
 
 
 /* Control the left side */
-    .left {
-      float: left;
-      width: 40%;
-      min-height: 90vh;
-      color: var(--font);
-      background-color: var(--background);
-    }
+
+.left {
+    float: left;
+}
+
 
 /* Control the right side */
-    .right {
-      float:right;
-      width: 60%;
-      min-height: 90vh;
-      background: url(/Images/EwWhyUpright.png);
-      background-position: center;
-    }
+
+.right {
+    position: relative;
+    float: right;
+    right: 0;
+    background-color: var(--background);
+}
+
 
 /* If you want the content centered horizontally and vertically */
-    .centered {
-      margin: 450px 45px 0px 45px;
-   }
-    
-    /* Mobile Styles */
-    @media only screen and (max-width: 500px) {
-      .feature-1,
-      .feature-2,
-      .input,
-      .mainpage,
-      .opinion {
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.post {
+    border: 5px solid #7f6085;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.user {
+    justify-content: center;
+}
+
+.user-profile {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.post-word {
+    overflow: hidden;
+}
+
+.post-image {
+    padding: 0 50 0 0px;
+    align-items: center;
+}
+
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 500px) {
+    .feature-1,
+    .feature-2,
+    .input,
+    .mainpage,
+    .opinion {
         width: 90%;
-      }
-      .forum {
+    }
+    .forum {
         width: 90%;
         align-items: center;
         justify-content: center;
-      }
-      .contentbox {
-        width: 90%;
-        min-height: 87vh;
-      }
-      .aboutmain {
-        width: 90%;
-      }
-      .left {
-        width: 50%;
-      }
-      .right {
-        width: 50%;
-        background-size:cover;
-        background-repeat: no-repeat;
-      }
-      .centered {
-        margin: auto;
-        margin-top: 25px;
-      }
     }
-    
-    /* Tablet Styles */
-    @media only screen and (min-width: 501px) and (max-width: 960px) {
-      .feature-1,
-      .feature-2
-       {
+    .contentbox {
+        height: 70%;
+    }
+    .right {
+        width: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .aboutmain {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+}
+
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .feature-1,
+    .feature-2 {
         width: 50%;
     }
     .mainpage,
-    .opinion,
-    .aboutmain {
-      width: 90%;
+    .opinion {
+        width: 90%;
     }
     .contentbox {
-      width: 90%;
-      min-height: 92vh; 
+        height: 80%;
     }
     .forum {
-      width: 90%;
+        width: 90%;
     }
-  
-  }
-    
-    /* Desktop Styles */
-    @media only screen and (min-width: 961px) {
-      .page {
+    .aboutmain {
+        background-size: cover;
+    }
+}
+
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .page {
         width: auto;
         margin: 0 auto;
-      }
-      .feature-1,
-      .feature-2 {
-        width: 22%;
-      }
-      .footer {
-          height: 60px;
-          order: 2;
-      }
-      .mainpage,
-      .forum,
-      .opinion {
-        width: 90%;
-      }
     }
-  
+    .feature-1,
+    .feature-2 {
+        width: 22%;
+    }
+    .mainpage,
+    .forum,
+    .opinion {
+        width: 90%;
+    }
+}

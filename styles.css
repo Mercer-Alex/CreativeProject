@@ -7,11 +7,11 @@
  :root {
     --background: #121212;
     --overlay: #e1bee709;
-    --headfooter: #436d4a31;
+    --headfooter: #1C241D;
     --font: rgb(255, 255, 255);
     --hover: #af8eb5;
     --button: #7f6085;
-    --cards: #9fcda56b;
+    --cards: #436d4afa;
 }
 
 body {
@@ -315,6 +315,18 @@ input:checked+.slider:before {
     color: var(--hover);
 }
 
+.fa-fw {
+    color: var(--button);
+}
+
+.fa-user {
+    color: var(--font);
+}
+
+.fa-user:hover {
+    color: white;
+}
+
 
 /*text color*/
 
@@ -394,6 +406,7 @@ input:checked+.slider:before {
     border-radius: 10px;
     align-items: center;
     padding: 10px;
+    margin: 10px;
 }
 
 .user {

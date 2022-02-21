@@ -193,7 +193,6 @@ input:checked+.slider:before {
     width: 40em;
     margin: auto;
     padding: 10px;
-    overflow: hidden;
     color: white;
 }
 
@@ -413,6 +412,16 @@ input:checked+.slider:before {
 .post-image {
     padding: 0 50 0 0px;
     align-items: center;
+}
+
+.public-response {
+    align-items: center;
+}
+
+#js_emoji {
+    font-size: x-large;
+    margin-left: 5px;
+    align-self: center;
 }
 
 

@@ -311,6 +311,10 @@ input:checked+.slider:before {
     font-size: 2em;
 }
 
+.nav-item a:hover {
+    color: var(--hover);
+}
+
 
 /*text color*/
 
@@ -321,8 +325,8 @@ input:checked+.slider:before {
 
 /*button*/
 
-.btn :hover {
-    color: var(--hover) !important;
+.btn:hover {
+    background-color: var(--hover);
 }
 
 .btn {
@@ -420,6 +424,10 @@ input:checked+.slider:before {
     font-size: x-large;
     margin-left: 5px;
     align-self: center;
+}
+
+.fa:hover {
+    color: var(--hover);
 }
 
 

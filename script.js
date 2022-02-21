@@ -5,9 +5,9 @@ function getEmoji(category) {
         .then((response) => {
             return response.json();
         }).then((json) => {
-            let results = `<p>${json.htmlCode[0]}</p>`
+            let results = `${json.htmlCode[0]}`
 
-            document.getElementById("js_emoji").innerHTML = results
+            document.getElementById("js_emoji").innerHTML += results
         })
 }
 

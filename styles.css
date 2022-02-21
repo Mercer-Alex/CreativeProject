@@ -26,13 +26,14 @@ body::after {
     height: 50px;
 }
 
-.home-image {
+
+/* .home-image {
     background: url(/Images/widest.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-}
+} */
 
 footer.footer {
     text-align: center;
@@ -230,15 +231,6 @@ input:checked+.slider:before {
     overflow: hidden;
 }
 
-.aboutmain {
-    background-image: url(/Images/loginback.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    overflow: hidden;
-}
-
 
 /*opinion page*/
 
@@ -363,14 +355,20 @@ input:checked+.slider:before {
 /* Control the left side */
 
 .left {
-    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.main-image {
+    width: 800px;
 }
 
 
 /* Control the right side */
 
 .right {
-    position: relative;
     float: right;
     right: 0;
     background-color: var(--background);
@@ -448,9 +446,8 @@ input:checked+.slider:before {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    .aboutmain {
-        background-size: contain;
-        background-repeat: repeat;
+    .main-image {
+        width: 275px;
     }
 }
 
@@ -463,7 +460,8 @@ input:checked+.slider:before {
         width: 50%;
     }
     .mainpage,
-    .opinion {
+    .opinion,
+    .input {
         width: 90%;
     }
     .contentbox {
@@ -472,8 +470,8 @@ input:checked+.slider:before {
     .forum {
         width: 90%;
     }
-    .aboutmain {
-        background-size: cover;
+    .main-image {
+        width: 500px;
     }
 }
 
